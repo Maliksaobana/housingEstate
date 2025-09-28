@@ -1,0 +1,24 @@
+            <!-- <div class="rs">
+              <h4>2023</h4>
+              <div class="rwthings">
+                <div class="rwimg">
+                  <img src="" alt="image of our awards">
+                </div>
+                <div class="rwdetails">
+                  <h4>architectural innovation price</h4>
+                  <p>Our architectural achievements have garnered numerous awards, reflecting our passion for creating spaces that blend innovation with functionality.</p>
+                </div>
+              </div>
+            </div>
+            <div class="rs">
+              <h4>2024</h4>
+              <div class="rwthings">
+                <div class="rwimg">
+                  <img src="" alt="image of our awards">
+                </div>
+                <div class="rwdetails">
+                  <h4>creative space award</h4>
+                  <p>Our projects have been celebrated for their unique blend of creativity and practicality. Winning awards for both aesthetics and functionality.</p>
+                </div>
+              </div>
+            </div> -->
