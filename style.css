@@ -588,7 +588,7 @@ nav ul li{
     margin-block: 2%;
     width: 100%;
     display: flex;
-    gap: 2%;
+    gap: 3%;
     flex-flow: row wrap;
 }
 .readBlog{
