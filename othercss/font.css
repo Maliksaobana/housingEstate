@@ -91,6 +91,11 @@
     line-height: 1.4em;
 }
 
+.comment p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5em;
+}
 .comment i{
     font-size: 80px;
 }
