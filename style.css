@@ -38,35 +38,71 @@ nav ul li{
 .menu{
     position: relative;
 }
-
-.pages{
+.inside{
     display: flex;
-    /* border: 1px solid; */
-    width: 480px;
-    position: absolute;
-    top: -1000%;
-    justify-content: space-between;
-    padding: 10px;
-    transition: opacity .4s;
-    opacity: 0;
-    text-align: center;
-    background: #000;
-    border-radius: 10px;
+    align-items: center;
 }
 
+.fa-sort-down{
+    transition: transform .4s;
+}
+.menu:hover .textlink .fa-sort-down{
+    transform: rotate(-180deg);
+}
 .menu:hover .pages{
-    opacity: 1;
-    top: 20%;
-    transform: translate(-77%,20%);
+    display: block;
+}
+.pages{
+    /* border: 1px solid; */
+    width: 520px;
+    position: absolute;
+    top: 50%;
+    padding: 40px 30px;
+    transition: opacity .4s;
+    display: none;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    left: -380px;
+}
+.mainmenu{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.submenu{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.submenu h4:nth-child(2){
+    margin-right: 50px;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+}
+.options ul li{
+    margin: 0;
+    display: flex;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+.contact{
+    text-align: left;
 }
 
 .call{
     border-bottom: 1px solid;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: pointer;
+    position: relative;
 }
 .call p{
     line-height: 24px;
+    transition: transform .5s;
 }
 .fa-arrow-right{
     transform: rotate(320deg);
@@ -599,17 +635,19 @@ nav ul li{
     cursor: pointer;
 }
 .readBlog:hover img{
-    transform: scale(1.01);
+    transform: scale(1.2);
 }
 .blogImg{
     width: 100%;
     height: 380px;
+    overflow: hidden;
 }
 .blogImg img{
     width: 100%;
     height: 100%;
     object-fit: fill;
     object-position: top;
+    transition: transform .5s;
 }
 
 .blogtext{
@@ -622,4 +660,77 @@ nav ul li{
 .b{
     margin-top: 4%;
     margin-bottom: 3%;
+}
+
+
+/* footer starts here ======================-> */
+footer{
+    background: #000;
+    position: relative;
+    padding: 3% 5%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.fheader{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding-block: 3%;
+    align-items: flex-end;
+}
+.arrow{
+    background-color: orange;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background .5s;
+}
+.arrow:hover{
+    background: #fff;
+}
+.arrow:hover .farrow{
+    transform: rotate(360deg);
+    color: orange;
+}
+.fbody{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid;
+    padding-block: 3%;
+}
+.fmenu{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flink ul li{
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+    margin: 20px 0;
+}
+.ffoot{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-block: 2%;
+}
+.fside{
+    display: inline-flex;
+}
+.fside h6{
+    margin-left: 1rem;
 }

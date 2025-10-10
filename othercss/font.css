@@ -1,12 +1,5 @@
 @import url(/housing_site/othercss/color.css);
-:root{
-    --headersfont: 2.4rem;
-    --mainfont: 4rem;
-    --linkfont: ;
-    --buttonfont: ;
-    --infosize: ;
-    --normalsize: ;
-}
+
 .text h1{
     color: #fff;
     font-size: var(--mainfont);
@@ -28,10 +21,35 @@
     font-size: 10px;
     transition: ease .5s;
 }
-
-.pages{
-    color: #fff;
+.textlink{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--thirdColor);
+    font-size: var(--linkfont);
+    cursor: pointer;
+    transition: color .4s;
 }
+.textlink:hover,
+.menu:hover .inside{
+    color: var(--sixthColor);
+}
+.fa-sort-down{
+    font-size: 12px;
+    margin-left: 8px;
+}
+.emphasis{
+    color: var(--sixthColor);
+}
+
+.mainmenu h4{
+    font-size: var(--normalsize);
+    text-transform: capitalize;
+}
+
+
+
+
+
 
 .itemdetails{
     color: #fff;
@@ -98,6 +116,11 @@
 }
 .comment i{
     font-size: 80px;
+}
+.farrow{
+    font-size: 35px;
+    transition: transform .4s, color .4s;
+    color: #000;
 }
 @media only screen and (max-width: 720px) {
     
