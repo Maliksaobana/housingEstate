@@ -45,9 +45,23 @@
     font-size: var(--normalsize);
     text-transform: capitalize;
 }
-
-
-
+.call p{
+    line-height: 24px;
+    text-transform: capitalize;
+    font-size: var(--sparefont);
+}
+/* home page =======================> */
+.ht h5{
+    font-size: var(--linkfont);
+    text-transform: capitalize;
+}
+.hometitle h1{
+    font-size: var(--headersfont);
+    text-transform: capitalize;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 90%;
+}
 
 
 

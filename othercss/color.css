@@ -15,7 +15,8 @@
     --headersfont: 2.4rem;
     --mainfont: 4rem;
     --linkfont: 1rem;
-    --buttonfont: ;
-    --infosize: ;
+    --buttonfont: 1rem;
+    --infosize: 1.2rem;
     --normalsize: 1.1rem;
+    --sparefont: 1rem;
 }
