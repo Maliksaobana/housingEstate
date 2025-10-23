@@ -2,7 +2,7 @@
     --firstColor: #7D3EF0;
     --secondColor: #82CA76;
     --thirdColor: #343434;
-    --fourthColor: #B6C783;
+    --fourthColor: #7a8164c9;
     --fivethColor: #DFD9B4;
     --sixthColor: #BA5C20;
     --sevenethColor: #C325FF;
@@ -19,4 +19,8 @@
     --infosize: 1.2rem;
     --normalsize: 1.1rem;
     --sparefont: 1rem;
+    --menufont: 1.8rem;
+    --minifont: 1.2rem;
+    --textsize: 1rem;
+    --author: 1.4rem;
 }
