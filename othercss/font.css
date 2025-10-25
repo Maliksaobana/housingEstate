@@ -75,7 +75,7 @@
     font-size: var(--minifont);
     text-transform: uppercase;
     color: orange;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .ht span,
@@ -121,7 +121,7 @@
 
 .btn button i{
     margin-left: 10px;
-    background: #000;
+    background: orange;
     padding: 5px;
     border-radius: 50%;
     color: #fff;
@@ -129,7 +129,7 @@
     transition-delay: .2s;
 }
 .btn button:hover i{
-    color: #000;
+    color: orange;
     background-color: #fff;
 }
 .imgreview p{
@@ -143,6 +143,30 @@
 
 .wtitle h1{
     font-size: var(--headersfont);
+    font-weight: 500;
+}
+
+.vp button{
+    font-weight: 600;
+}
+
+.year p{
+    text-transform: capitalize;
+}
+.year p:last-child{
+    font-size: var(--author);
+    font-weight: 500;
+}
+
+.residence h4{
+    text-transform: capitalize;
+    font-size: var(--infosize);
+    font-weight: 500;
+    line-height: 2em;
+}
+.residence p{
+    width: 100%;
+    font-size: var(--reds);
 }
 
 .design h1{
@@ -159,18 +183,31 @@
     font-size: var(--headersfont);
 }
 
+
+.rs h4{
+    width: 35%;
+    font-size: var(--awards);
+    font-weight: 500;
+}
+
+
 .rwdetails h4{
     padding-bottom: 2%;
     text-transform: capitalize;
+    font-size: var(--infosize);
+    font-weight: 500;
 }
 .rwdetails p{
     line-height: 1.4em;
+    font-size: var(--trophy);
 }
 
 .comment p{
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.5em;
+    padding-top: 5px;
+    width: 100%;
 }
 .comment i{
     font-size: 80px;

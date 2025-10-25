@@ -16,11 +16,14 @@
     --mainfont: 4rem;
     --linkfont: 1rem;
     --buttonfont: 1rem;
-    --infosize: 1.2rem;
+    --infosize: 1.3rem;
     --normalsize: 1.1rem;
     --sparefont: 1rem;
     --menufont: 1.8rem;
     --minifont: 1.2rem;
     --textsize: 1rem;
     --author: 1.4rem;
+    --reds: .9rem;
+    --awards: 1rem;
+    --trophy: .9rem;
 }
