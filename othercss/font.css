@@ -171,6 +171,14 @@
 
 .design h1{
     text-transform: capitalize;
+    font-weight: 500;
+    font-size: var(--infosize);
+}
+
+.showinfo p{
+    line-height: 0px !important;
+    text-transform: capitalize;
+    font-size: var(--sparefont);
 }
 
 .serviceinfo h1{
@@ -203,19 +211,83 @@
 }
 
 .comment p{
-    font-size: 1.8rem;
+    font-size: var(--comment);
     font-weight: 500;
     line-height: 1.5em;
     padding-top: 5px;
     width: 100%;
+    letter-spacing: .05em;
 }
 .comment i{
     font-size: 80px;
 }
+
+.user h4{
+    text-transform: capitalize;
+    font-size: var(--infosize);
+    margin-bottom: 5px;
+}
+
+.blogtext p{
+    text-transform: capitalize;
+}
+
+
+.b h4{
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.b h4 i{
+    margin-left: 4px;
+}
+
+.ftext h2{
+    font-size: 3rem;
+}
+
 .farrow{
     font-size: 35px;
     transition: transform .4s, color .4s;
     color: #000;
+}
+
+.ftitle h3{
+    font-size: var(--menufont);
+    font-weight: 500;
+}
+
+.ftitle h3 i{
+    margin-right: 5px;
+}
+
+.ftitle h5{
+    font-size: 16px;
+    width: 70%;
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.fmenu h6{
+    font-size: 19px;
+}
+
+.fmenu ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    transition: color .5s;
+}
+
+.fmenu ul li a:hover{
+    color: var(--sixthColor);
+}
+
+.ffoot h6{
+    font-size: 12px;
+    font-weight: 500;
 }
 @media only screen and (max-width: 720px) {
     

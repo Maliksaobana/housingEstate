@@ -195,7 +195,7 @@
     <article>
       <div class="services">
         <div class="abtservices">
-          <div class="ht sr">
+          <div class="ht srv">
               <span></span>
               <h5>our services</h5>
           </div>
@@ -214,11 +214,11 @@
             <img src="" alt="prove">
           </div>
           <div class="gallaryinfo">
-            <div class="design">
+            <div class="design last firstOne">
               <h1>architecture design</h1>
               <div class="infotwo">
                 <p>We specialize in designing tailored spaces. Our designs are crafted to align with your specific needs, preferences, and lifestyle, blending creativity with functionality.</p>
-                <div class="call showinfo">
+                <div class="showinfo">
                 <p>service details <span><i class="fa-solid fa-arrow-right"></i></span></p>
                 </div>
               </div>
@@ -227,7 +227,7 @@
               <h1>interior design</h1>
               <div class="infotwo">
                 <p>Interior design is the art and science of enhancing the interior of a space to achieve a healthier and more aesthetically pleasing environment for the people using it.</p>
-                <div class="call showinfo">
+                <div class="showinfo">
                   <p>service details <span><i class="fa-solid fa-arrow-right"></i></span></p>
                 </div>
               </div>
@@ -236,7 +236,7 @@
               <h1>urban design</h1>
               <div class="infotwo">
                 <p>Urban design is the process of shaping the physical features of cities, towns, and public spaces. It integrates architecture, landscape architecture, and city planning to create functional and aesthetically pleasing urban environments</p>
-                <div class="call showinfo">
+                <div class="showinfo">
                   <p>service details <span><i class="fa-solid fa-arrow-right"></i></span></p>
                 </div>
               </div>
@@ -245,7 +245,7 @@
               <h1>landscape design</h1>
               <div class="infotwo">
                 <p>Landscape design is the art and practice of arranging outdoor spaces to enhance their aesthetic appeal and functionality. It involves planning and creating gardens, parks, and other green areas by incorporating elements.</p>
-                <div class="call showinfo">
+                <div class="showinfo">
                   <p>service details <span><i class="fa-solid fa-arrow-right"></i></span></p>
                 </div>
               </div>
@@ -254,7 +254,7 @@
               <h1>project management</h1>
               <div class="infotwo">
                 <p>Project management is the discipline of planning, organizing, securing, managing, leading, and controlling the resources needed to achieve specific project goals.</p>
-                <div class="call showinfo">
+                <div class="showinfo">
                   <p>service details <span><i class="fa-solid fa-arrow-right"></i></span></p>
                 </div>
               </div>
@@ -328,7 +328,7 @@
         </div>
 
         <div class="rightside">
-          <div class="homeimg">
+          <div class="commentImg">
             <img src="/images/portrait.jpg" alt="image of our client who made this review">
           </div>
         </div>
@@ -390,7 +390,7 @@
               <img src="/images/skyscraper.jpg" alt="">
             </div>
             <div class="blogtext">
-              <p>read time 4min</p>
+              <p>read time 4 min</p>
               <p>june 26, 2024</p>
             </div>
             <h4>The Morphogenesis Approach to Sustainable Architecture</h4>
@@ -403,7 +403,7 @@
               <img src="/images/house.jpg" alt="">
             </div>
             <div class="blogtext">
-              <p>read time 4min</p>
+              <p>read time 5 min</p>
               <p>june 26, 2024</p>
             </div>
             <h4>The Morphogenesis Approach to Sustainable Architecture</h4>
@@ -418,7 +418,7 @@
     <footer>
       <div class="fheader">
         <div class="ftext">
-          <h2>let's create a <br><span>better future together.</span></h2>
+          <h2>Let's Create a <br><span>Better Future Together.</span></h2>
         </div>
         <div class="arrow">
           <i class="fa-solid fa-arrow-right farrow"></i>
@@ -431,7 +431,7 @@
         </div>
         <div class="fmenu">
           <nav class="flink">
-            <h6>navigate</h6>
+            <h6>Navigate</h6>
               <ul>
                 <li><a href="">home</a></li>
                 <li><a href="">about us</a></li>
@@ -441,7 +441,7 @@
               </ul>
           </nav>
           <nav class="flink">
-            <h6>utility pages</h6>
+            <h6>Utility Pages</h6>
               <ul>
                 <li><a href="">style guide</a></li>
                 <li><a href="">licenses</a></li>
@@ -449,7 +449,7 @@
               </ul>
           </nav>
           <nav class="flink">
-            <h6>follow us</h6>
+            <h6>Follow us</h6>
               <ul>
                 <li><a href="">facebook</a></li>
                 <li><a href="">instagram</a></li>
@@ -467,5 +467,20 @@
         </div>
       </div>
     </footer>
+
+
+    <script>
+      let projectPlans = document.querySelectorAll(".gallaryinfo .design")
+
+      function accordian(){
+        document.querySelector(".last").classList.remove("firstOne")
+        projectPlans.forEach(item => item.classList.remove("forheight"))
+        this.classList.add("forheight")
+      }
+
+      projectPlans.forEach(item =>{
+        item.addEventListener("mouseover", accordian)
+      })
+    </script>
 </body>
 </html>
