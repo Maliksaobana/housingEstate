@@ -176,9 +176,10 @@
 }
 
 .showinfo p{
-    line-height: 0px !important;
+    line-height: 24px;
     text-transform: capitalize;
     font-size: var(--sparefont);
+    /* outline: 1px solid green; */
 }
 
 .serviceinfo h1{
@@ -232,6 +233,9 @@
     text-transform: capitalize;
 }
 
+.intext h1{
+    width: 52% !important;
+}
 
 .b h4{
     text-transform: capitalize;
@@ -289,6 +293,194 @@
     font-size: 12px;
     font-weight: 500;
 }
-@media only screen and (max-width: 720px) {
+.icons i{
+    font-size: 30px;
+}
+@media only screen and (max-width: 1024px) {
+    .title h3{
+    }
+    .title h3 i{
+    }
+
+    .text h1{
+    }
+
+    .log p{
+    }
+
+    .log span i{
+    }
+
+    .log span i:nth-child(2){
+    }
+    .textlink{
+        font-size: var(--linkfont);
+    }
+    .fa-sort-down{
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    .mainmenu h4{
+        font-size: var(--normalsize);
+    }
+    .call p{
+        font-size: var(--sparefont);
+    }
+    /* home page =======================> */
+
+    .hometitle h1{
+        font-size: var(--headersfont);
+    }
+    .hometitle p{
+    }
+    .ht h5{
+        font-size: var(--minifont);
+    }
+
+    .rText h3{
+        font-size: var(--headersfont);
+    }
+    .rText p{
+    }
+
+    .itemdetails{
+    }
+    .itemdetails p{
+        font-size: 14px;
+    }
+
+    .itemdetails h4{
+        font-size: 14px;
+    }
+
+    .btn button{
+        font-size: var(--buttonfont);
+    }
+
+    .imgreview p{
+        font-size: var(--infosize);
+    }
+    .imgreview h3{
+        font-size: var(--author);
+    }
+
+    .wtitle h1{
+        font-size: var(--headersfont);
+    }
+
+    .year p:last-child{
+        font-size: var(--author);
+    }
+
+    .residence h4{
+        font-size: var(--infosize);
+    }
+    .residence p{
+        font-size: var(--reds);
+    }
+
+    .design h1{
+        font-size: var(--infosize);
+    }
+
+    .showinfo p{
+        font-size: var(--sparefont);
+    }
+
+    .serviceinfo h1{
+    }
+
+    .award h1{
+        font-size: var(--headersfont);
+    }
+
+    .rs h4{
+        font-size: var(--awards);
+    }
+
+    .rwdetails h4{
+    }
+
+    .rwdetails p{
+        font-size: var(--trophy);
+    }
+
+    .comment p{
+        font-size: var(--comment);
+
+    }
+    .comment i{
+        font-size: 80px;
+    }
+
+    .user h4{
+        text-transform: capitalize;
+        font-size: var(--infosize);
+        margin-bottom: 5px;
+    }
+
+    .blogtext p{
+        text-transform: capitalize;
+    }
+
+    .intext h1{
+        width: 52% !important;
+    }
+
+    .b h4{
+        text-transform: capitalize;
+        font-weight: 500;
+        line-height: 1.5em;
+    }
+
+    .b h4 i{
+        margin-left: 4px;
+    }
+
+    .ftext h2{
+        font-size: 3rem;
+    }
+
+    .farrow{
+        font-size: 35px;
+        transition: transform .4s, color .4s;
+        color: #000;
+    }
+
+    .ftitle h3{
+        font-size: var(--menufont);
+        font-weight: 500;
+    }
+
+    .ftitle h3 i{
+        margin-right: 5px;
+    }
+
+    .ftitle h5{
+    }
+
+    .fmenu h6{
+    }
+
+    .fmenu ul li a{
+    }
+
+    .fmenu ul li a:hover{
+    }
+
+    .ffoot h6{
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 425px) {
+    
+}
+
+@media only screen and (max-width: 375px) {
     
 }

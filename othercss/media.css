@@ -1,3 +1,105 @@
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 1520px) {
+    .container,
+    .content,
+    #homepage,
+    #server,
+    #ved,
+    .give,
+    .low,
+    .archieved,
+    .fbig,
+    .bbig{
+        width: 50% !important;
+        margin-inline: auto;
+    }
+    .container{
+        padding: 2% 3% !important;
+    }
+    .srgallary,
+    .imageslider{
+        height: 40vh !important;
+    }
+    .wtitle h1{
+        width: 60% !important;
+    }
+    .fineP{
+        height: 50vh !important;
+    }
+    .gallary img{
+        height: 480px !important;
+        width: 380px !important;
+    }
+    .rwdetails p{
+        width: 100% !important;
+    }
+    .intext h1{
+        width: 70% !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .container > .call{
+        display: none;
+    }
+    .nav{
+        position: absolute !important;
+        top: -1000000px !important;
+        z-index: 9999;
+        background: #fff;
+        width: 100%;
+        left: 0;
+        padding-left: 3%;
+        transition: transform .5s;
+    }
+    .tune{
+        display: block !important;
+    }
+    nav ul{
+        display: flex !important;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin-block: .8rem;
+    }
+    .submenu{
+        margin: auto;
+        justify-content: unset !important;
+    }
+    .submenu h4:nth-child(1){
+        margin-left: 18px !important;
+    }
+    .submenu h4:nth-child(2){
+        margin-left: 190px !important;
+    }
+    .pages{
+        left: -50px !important;
+        width: 1030px !important;
+        padding: 10px 50px !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+    .options{
+        margin-right: 10px !important;
+        justify-content: unset !important;
+    }
+    .options ul li{
+        margin-top: 5px !important;
+    }
+    .icons{
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 425px) {
+    
+}
+
+@media only screen and (max-width: 375px) {
     
 }

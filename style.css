@@ -30,6 +30,24 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 2% 5%;
+    position: relative;
+}
+.icons{
+    display: none;
+}
+.m{
+    display: flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.m i{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: opacity .5s;
 }
 nav ul li{
     display: inline-flex;
@@ -86,7 +104,6 @@ nav ul li{
     justify-content: space-between;
 }
 .options ul li{
-    margin: 0;
     display: flex;
     margin-top: 20px;
     text-align: left;
@@ -109,11 +126,15 @@ nav ul li{
 
 /* body of the website =============================> */
 
-.content{
+.forwallpaper{
     background: linear-gradient(rgba(27, 36, 50, 0.5),rgba(41, 45, 38, 0.5)), url(/images/skyscraper.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: calc(100vh + 103px);
+}
+
+.content{
+    height: 100%;
     position: relative;
 }
 
@@ -333,12 +354,17 @@ nav ul li{
     padding: 10px;
 }
 
+#feat{
+    width: 100%;
+    background: var(--fourthColor);
+}
+
 .featured{
     display: flex;
     flex-direction: column;
     padding: 10% 5%;
     margin-bottom: 10%;
-    background: var(--fourthColor);
+    width: 100%;
 }
 
 .work{
@@ -392,6 +418,10 @@ nav ul li{
     margin-top: 10px;
 }
 
+
+/* hold please ====================================--> */
+
+
 .services{
     width: 100%;
     padding: 0 5%;
@@ -406,7 +436,7 @@ nav ul li{
 }
 
 .serviceinfo h1{
-    width: 50%;
+    width: 60%;
     line-height: 1.3em;
 }
 
@@ -426,7 +456,18 @@ nav ul li{
 .gallary{
     width: 50%;
     height: 100%;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
     /* outline: 2px solid pink;*/
+}
+
+.gallary img{
+    width: 340px;
+    height: 360px;
+    object-fit: cover;
+    object-position: top;
+    transition: ease-in .5s;
 }
 
 .gallaryinfo{
@@ -474,13 +515,14 @@ nav ul li{
     transition: ease 5s;
 }
 
-.infotwo p{
+.infotwo > p{
     margin-block: 10px;
 }
 
 .showinfo{
     width: fit-content;
     border-bottom: 1px solid;
+    /* outline: 1px solid red; */
 }
 
 .archived{
@@ -530,6 +572,11 @@ nav ul li{
     width: 90%;
 }
 
+#test{
+    background: var(--fourthColor);
+    width: 100%;
+}
+
 .testimonial{
     padding: 8% 5%;
     width: 100%;
@@ -537,7 +584,6 @@ nav ul li{
     display: flex;
     align-content: space-between;
     align-items: flex-end;
-    background: var(--fourthColor);
     gap: 8%;
 }
 
@@ -614,7 +660,7 @@ nav ul li{
 
 /* picture grid slide for business showcase ==============================> */
 
-.archieved{
+.hie{
     margin-top: 10%;
     padding: 3% 5%;
 }
@@ -628,7 +674,7 @@ nav ul li{
 .projects{
     width: 100%;
     display: grid;
-    grid-template: 1fr 100px 1fr / repeat(3,1fr);
+    grid-template: 1fr 150px 1fr / repeat(3,1fr);
     height: 100%;
     gap: 20px;
 }
@@ -649,9 +695,7 @@ nav ul li{
     object-position: center; 
 }
 
-.second{
-    order: 3;
-}
+
 .first{
     grid-row: 1 / span 2;
 }
@@ -720,6 +764,9 @@ nav ul li{
 /* footer starts here ======================-> */
 footer{
     background: #000;
+}
+
+.fbig{
     position: relative;
     padding: 3% 5%;
     margin-top: 2%;
@@ -727,6 +774,7 @@ footer{
     flex-direction: column;
     color: #fff;
 }
+
 .fheader{
     display: flex;
     width: 100%;
@@ -787,4 +835,14 @@ footer{
 }
 .fside h6{
     margin-left: 1rem;
+}
+
+.hella{
+    top: 100% !important;
+    transition: transform .5s !important;
+}
+
+.golla{
+    opacity: 0;
+    z-index: -5 !important;
 }

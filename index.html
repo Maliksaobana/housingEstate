@@ -64,9 +64,15 @@
         <div class="call">
           <p>schedule a call <span><i class="fa-solid fa-arrow-right"></i></span></p>
         </div>
+        <div class="icons">
+          <div class="m">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-close golla"></i>
+          </div>
+        </div>
       </div>
     </header>
-    <section>
+    <section class="forwallpaper">
       <div class="content">
         <div class="text">
           <h1>Crafting Innovative, <br><span>Functional Spaces</span><br>Modern Living.</h1>
@@ -155,7 +161,8 @@
       </div>
     </section>
 
-    <article>
+    <article id="feat">
+      <div class="low">
       <div class="featured">
         <div class="work">
           <div class="wtitle">
@@ -191,8 +198,9 @@
           </div>
         </div>
       </div>
+      </div>
     </article>
-    <article>
+    <article id="server">
       <div class="services">
         <div class="abtservices">
           <div class="ht srv">
@@ -211,7 +219,7 @@
         </div>
         <div class="srgallary">
           <div class="gallary">
-            <img src="" alt="prove">
+            <img src="/images/architecture-26.jpg" alt="prove" id="prove">
           </div>
           <div class="gallaryinfo">
             <div class="design last firstOne">
@@ -264,7 +272,7 @@
       </div>
     </article>
 
-    <aside>
+    <aside id="ved">
       <div class="archived">
         <div class="archinfo">
           <div class="award">
@@ -310,7 +318,8 @@
       </div>
     </aside>
 
-    <section>
+    <section id="test">
+      <div class="give">
       <div class="testimonial">
         <div class="leftside">
           <div class="comment">
@@ -333,8 +342,10 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
     <div class="archieved">
+      <div class="hie">
       <div class="showcase">
         <div class="award">
           <div class="ht wt">
@@ -347,13 +358,13 @@
       <div class="fineP">
         <div class="projects">
           <div class="imgproject first">
-            <img src="/images/house.jpg" alt="1">
+            <img src="/images/interior-2.jpg" alt="1">
           </div>
         <div class="imgproject second">
-          <img src="/images/skyscraper.jpg" alt="2">
+          <img src="/images/interior-1.jpg" alt="2">
         </div>
         <div class="imgproject third">
-          <img src="/images/house.jpg" alt="3">
+          <img src="/images/building-7.jpg" alt="3">
         </div>
         <div class="imgproject fourth">
           <img src="/images/skyscraper.jpg" alt="4">
@@ -367,7 +378,9 @@
       </div>
       </div>
     </div>
+    </div>
     <aside>
+      <div class="bbig">
       <div class="blog">
         <div class="blogheader">
           <div class="ht">
@@ -413,9 +426,11 @@
           </div>
         </article>
       </div>
+      </div>
     </aside>
 
     <footer>
+      <div class="fbig">
       <div class="fheader">
         <div class="ftext">
           <h2>Let's Create a <br><span>Better Future Together.</span></h2>
@@ -466,21 +481,44 @@
           <h6>Terms and Conditions</h6>
         </div>
       </div>
+      </div>
     </footer>
 
 
     <script>
       let projectPlans = document.querySelectorAll(".gallaryinfo .design")
+      let imgProve = document.querySelector("#prove")
 
       function accordian(){
         document.querySelector(".last").classList.remove("firstOne")
         projectPlans.forEach(item => item.classList.remove("forheight"))
         this.classList.add("forheight")
+
+        this.firstElementChild.textContent.includes("interior") ? imgProve.src = "/images/station.jpg" :
+        this.firstElementChild.textContent.includes("urban") ? imgProve.src = "/images/skyscraper.jpg" :
+        this.firstElementChild.textContent.includes("landscape") ? imgProve.src = "/images/skyscraper.jpg" :
+        this.firstElementChild.textContent.includes("project") ? imgProve.src = "/images/skyscraper.jpg" :
+        imgProve.src = "/images/architecture-26.jpg"
       }
 
       projectPlans.forEach(item =>{
         item.addEventListener("mouseover", accordian)
       })
+
+      let navigationButton = document.querySelector(".fa-bars")
+      let menuShow = document.querySelector(".nav")
+
+      navigationButton.addEventListener("click", ()=>{
+        menuShow.classList.toggle("hella")
+        navigationButton.classList.toggle("golla")
+        document.querySelector(".fa-close").classList.toggle("golla");
+        document.querySelector(".fa-close").onclick = ()=>{
+          document.querySelector(".fa-close").classList.toggle("golla")
+          navigationButton.classList.toggle("golla")
+          menuShow.classList.toggle("hella")
+        }
+      })
+      // .fa-close
     </script>
 </body>
 </html>
