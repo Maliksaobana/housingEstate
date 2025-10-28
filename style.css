@@ -48,7 +48,19 @@ header{
     inset: 0;
     margin: auto;
     transition: opacity .5s;
+    cursor: pointer;
 }
+
+.m i:active{
+    animation: rota .5s;
+}
+
+@keyframes rota {
+    to{
+        transform: rotate(100deg);
+    }
+}
+
 nav ul li{
     display: inline-flex;
     margin-inline: 1rem;
@@ -268,7 +280,9 @@ nav ul li{
     margin-top: 10%;
     padding: 0 5%;
     display: flex;
+    flex-flow: column wrap;
 }
+
 .hometitle{
     display: flex;
     flex-direction: column;
@@ -331,7 +345,7 @@ nav ul li{
 .homeimg img{
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     object-position: top;
 }
 .imgreview{
@@ -372,8 +386,10 @@ nav ul li{
     margin-bottom: 3%;
 }
 .wt{
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
+    place-content: center;
+    width: 100%;
 }
 .wtitle h1{
     width: 50%;
@@ -449,7 +465,7 @@ nav ul li{
     display: flex;
     margin-top: 3%;
     align-items: flex-end;
-    height: 60vh;
+    /* height: 60vh; */
     /* overflow: hidden; */
     /* border: 1px solid; */
 }
@@ -458,7 +474,7 @@ nav ul li{
     height: 100%;
     display: flex;
     align-items: flex-end;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* outline: 2px solid pink;*/
 }
 
@@ -531,7 +547,8 @@ nav ul li{
 }
 
 .award{
-    text-align: center;
+    width: 100%;
+    place-content: center;
     margin-bottom: 1%;
 }
 
@@ -839,10 +856,11 @@ footer{
 
 .hella{
     top: 100% !important;
-    transition: transform .5s !important;
+    transition: transform .5s;
 }
 
 .golla{
     opacity: 0;
     z-index: -5 !important;
 }
+

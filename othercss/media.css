@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1520px) {
+@media only screen and (min-width: 1530px) {
     .container,
     .content,
     #homepage,
@@ -89,6 +89,64 @@
     }
     .icons{
         display: block !important;
+    }
+    .log{
+        width: 200px !important;
+    }
+    .bf{
+        width: 380px!important;
+    }
+    .hometitle{
+        margin-bottom: 20px !important;
+        width: 100% !important;
+    }
+    .homeimg{
+        width: 100% !important;
+        height: 600px !important;
+    }
+    .work{
+        text-align: left !important;
+    }
+    .wt{
+        place-content: initial !important;
+    }
+    .wtitle h1{
+        width: 100% !important;
+    }
+    .imageslider{
+        height: 50vh !important;
+        /* align-items: flex-start !important; */
+    }
+    .imgslide{
+        width: 60% !important;
+    }
+    .abtproject{
+        height: 100% !important;
+    }
+    .serviceinfo{
+        flex-direction: column !important;
+    }
+    .sr{
+        align-self: flex-start !important;
+    }
+    .srgallary{
+        flex-direction: column !important;
+    }
+    .gallary{
+        width: 100% !important;
+    }
+    .gallary img{
+        width: 100% !important;
+        height: 600px !important;
+    }
+    .gallaryinfo{
+        width: 100% !important;
+    }
+    .award{
+        place-content: left !important;
+    }
+    .commentImg{
+        width: 200px !important;
     }
 }
 

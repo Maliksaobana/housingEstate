@@ -64,6 +64,7 @@
     text-transform: capitalize;
     margin-top: 2%;
     width: 80%;
+    font-weight: 500;
 }
 .hometitle p{
     width: 60%;
@@ -147,7 +148,7 @@
 }
 
 .vp button{
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .year p{
@@ -294,15 +295,11 @@
     font-weight: 500;
 }
 .icons i{
-    font-size: 30px;
+    font-size: 25px;
 }
 @media only screen and (max-width: 1024px) {
-    .title h3{
-    }
-    .title h3 i{
-    }
-
     .text h1{
+        font-size: 3rem;
     }
 
     .log p{
@@ -330,9 +327,11 @@
     /* home page =======================> */
 
     .hometitle h1{
-        font-size: var(--headersfont);
+        width: 100% !important;
+        font-size: var(--mediafont);
     }
     .hometitle p{
+        width: 100% !important;
     }
     .ht h5{
         font-size: var(--minifont);
@@ -347,7 +346,7 @@
     .itemdetails{
     }
     .itemdetails p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .itemdetails h4{
@@ -359,6 +358,7 @@
     }
 
     .imgreview p{
+        width: 100% !important;
         font-size: var(--infosize);
     }
     .imgreview h3{
@@ -366,7 +366,7 @@
     }
 
     .wtitle h1{
-        font-size: var(--headersfont);
+        font-size: var(--mediafont);
     }
 
     .year p:last-child{
@@ -389,6 +389,8 @@
     }
 
     .serviceinfo h1{
+        width: 100% !important;
+        font-size: var(--mediafont);
     }
 
     .award h1{
