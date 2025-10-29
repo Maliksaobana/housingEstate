@@ -191,6 +191,7 @@
 .award h1{
     text-transform: capitalize;
     font-size: var(--headersfont);
+    text-align: center;
 }
 
 
@@ -297,6 +298,11 @@
 .icons i{
     font-size: 25px;
 }
+.showmore p{
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+}
 @media only screen and (max-width: 1024px) {
     .text h1{
         font-size: 3rem;
@@ -394,7 +400,8 @@
     }
 
     .award h1{
-        font-size: var(--headersfont);
+        font-size: var(--mediafont);
+        text-align: left;
     }
 
     .rs h4{
@@ -409,7 +416,7 @@
     }
 
     .comment p{
-        font-size: var(--comment);
+        font-size: 18px;
 
     }
     .comment i{
@@ -427,7 +434,8 @@
     }
 
     .intext h1{
-        width: 52% !important;
+        width: 100% !important;
+        line-height: 1.5em !important;
     }
 
     .b h4{
@@ -458,31 +466,57 @@
     .ftitle h3 i{
         margin-right: 5px;
     }
-
-    .ftitle h5{
-    }
-
-    .fmenu h6{
-    }
-
-    .fmenu ul li a{
-    }
-
-    .fmenu ul li a:hover{
-    }
-
-    .ffoot h6{
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .text h1{
+        font-size: 2rem;
+    }
+    .year p:last-child{
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+    .residence h4{
+        margin-block: 20px !important;
+    }
+    .rs h4{
+        width: 100%;
+    }
+    .rwdetails h4{
+        margin-block: 10px;
+    }
+    .rwdetails p{
+        margin-bottom: 15px;
+    }
+    .ftext h2{
+        font-size: 1.5rem;
+        width: 80%;
+    }
+    .farrow{
+        font-size: 25px;
+    }
+    .fmenu h6{
+        font-size: 1.2rem;
+    }
+    .fmenu ul li a{
+        font-size: 16px;
+    }
 }
 
-@media only screen and (max-width: 425px) {
-    
+@media only screen and (max-width: 400px) {
+    .ftext h2{
+        font-size: 1.3rem;
+    }
 }
 
-@media only screen and (max-width: 375px) {
-    
+@media only screen and (max-width: 321px) {
+    .ftext h2{
+        font-size: 1rem;
+    }
+    .fmenu ul li a{
+        font-size: 14px;
+    }
+    .fmenu h6{
+        font-size: 1rem;
+    }
 }

@@ -13,7 +13,7 @@
 body{
     width: 100%;
     /* max-width: 1520px; */
-    height: 100vh;
+    /* height: 100vh; */
     /* overflow-y: auto; */
     font-family: "Poppins", sans-serif;
     position: relative;
@@ -280,7 +280,6 @@ nav ul li{
     margin-top: 10%;
     padding: 0 5%;
     display: flex;
-    flex-flow: column wrap;
 }
 
 .hometitle{
@@ -548,7 +547,6 @@ nav ul li{
 
 .award{
     width: 100%;
-    place-content: center;
     margin-bottom: 1%;
 }
 
@@ -604,9 +602,6 @@ nav ul li{
     gap: 8%;
 }
 
-.leftside{
-    
-}
 .commentImg{
     width: 420px;
     height: 100%;
@@ -687,11 +682,12 @@ nav ul li{
 .fineP{
     width: 100%;
     height: 100vh;
+    /* position: relative; */
 }
 .projects{
     width: 100%;
     display: grid;
-    grid-template: 1fr 150px 1fr / repeat(3,1fr);
+    grid-template: 300px 200px 300px / repeat(3,1fr);
     height: 100%;
     gap: 20px;
 }
@@ -700,7 +696,7 @@ nav ul li{
     width: 100%;
     position: relative;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* outline: 1px solid red; */
     /* padding: 5px; */
 }
@@ -864,3 +860,6 @@ footer{
     z-index: -5 !important;
 }
 
+.showmore{
+    display: none;
+}

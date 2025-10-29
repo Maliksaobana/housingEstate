@@ -96,6 +96,9 @@
     .bf{
         width: 380px!important;
     }
+    .homecontent{
+        flex-flow: column wrap;
+    }
     .hometitle{
         margin-bottom: 20px !important;
         width: 100% !important;
@@ -142,22 +145,194 @@
     .gallaryinfo{
         width: 100% !important;
     }
-    .award{
-        place-content: left !important;
+    .testimonial{
+        width: 100% !important;
+        /* height: 80vh !important; */
+        gap: 5% !important;
     }
     .commentImg{
-        width: 200px !important;
+        width: 100% !important;
+    }
+    .fineP{
+        /* overflow: hidden !important; */
+    }
+    .projects{
+        grid-template: 200px 150px 200px / repeat(3, 1fr) !important;
+    }
+    .intext{
+        width: 100% !important;
+    }
+    .blogImg{
+        height: 240px !important;
+    }
+    .fbody{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .fmenu{
+        width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .forwallpaper{
+        height: calc(80vh + 103px) !important;
+    }
+    .text{
+        top: 35% !important;
+    }
+    .partners{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .records{
+        flex-direction: column;
+    }
+    .imageslider{
+        flex-direction: column;
+        height: fit-content !important;
+    }
+    .imgslide{
+        width: 100% !important;
+    }
+    .abtproject,
+    .rwdetails{
+        width: 100% !important;
+    }
+    .viewer{
+        margin-top: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    #ved{
+        margin-top: 30px !important;
+    }
+    .award{
+        margin-bottom: 20px !important;
+    }
+    .rs{
+        flex-direction: column;
+    }
+    .rwimg{
+        width: 160px !important;
+    }
+    .testimonial{
+        flex-direction: column;
+    }
+    .leftside{
+        margin-top: 50px !important;
+    }
+    .rightside{
+        order: -1;
+    }
+    .commentImg{
+        width: 100% !important;
+    }
+    .projects{
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: repeat(3, 200px) !important;
+    }
+    .first{
+        grid-row: 1 !important;
+    }
+    .second{
+        grid-row: 1;
+    }
+    .third{
+        grid-row: 2;
+    }
+    .fourth{
+        grid-row: 2 !important;
+    }
+    .fiveth{
+        grid-row: 3 !important;
+    }
+    .sixth{
+        grid-row: 3;
+    }
+    .fheader{
+        align-items: center !important;
+    }
+    .arrow{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .fmenu{
+        gap: 40px !important;
+    }
+    .homeimg,
+    .gallary img{
+        height: 400px !important;
+    }
+    .bf{
+        /* width: 300px !important; */
+        flex-direction: column !important;
+        width: 340px !important;
+    }
+    .dots{
+        flex-direction: row !important;
+        width: 50px !important;
+    }
+    .fheader{
+        margin-bottom: 20px !important;
+    }
 }
 
-@media only screen and (max-width: 425px) {
-    
+@media only screen and (max-width: 475px) {
+    .arrow{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .projects{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(3, 200px) auto !important;
+    }
+    .first{
+        grid-row: 1 !important;
+    }
+    .second{
+        grid-row: 2;
+    }
+    .third{
+        grid-row: 3;
+    }
+    .fourth{
+        grid-row: 4 !important;
+    }
+    .fiveth{
+        grid-row: 5 !important;
+    }
+    .sixth{
+        grid-row: 6;
+    }
+    .hide{
+        display: none;
+    }
+    .fineP{
+        height: fit-content !important;
+    }
+    .showmore{
+        display: block !important;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0 10px 20px;
+        position: relative;
+        padding-block: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .moreGrid{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(6, 200px) auto !important;
+        height: 100%;
+    }
 }
 
-@media only screen and (max-width: 375px) {
-    
+@media only screen and (max-width: 321px) {
+    .bf{
+        width: 100% !important;
+        right: 0 !important;
+    }
+    .arrow{
+        width: 60px !important;
+        height: 60px !important;
+    }
 }

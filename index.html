@@ -366,16 +366,19 @@
         <div class="imgproject third">
           <img src="/images/building-7.jpg" alt="3">
         </div>
-        <div class="imgproject fourth">
+        <div class="imgproject fourth hide find">
           <img src="/images/skyscraper.jpg" alt="4">
         </div>
-        <div class="imgproject fiveth">
+        <div class="imgproject fiveth hide find">
           <img src="/images/house.jpg" alt="5">
         </div>
-        <div class="imgproject sixth">
+        <div class="imgproject sixth hide find">
           <img src="/images/skyscraper.jpg" alt="6">
         </div>
       </div>
+        <div class="showmore">
+            <p>show more</p>
+        </div>
       </div>
     </div>
     </div>
@@ -397,7 +400,11 @@
             </div>
           </div>
         </div>
-        <article class="foread">
+      </div>
+      </div>
+    </aside>
+
+            <article class="foread">
           <div class="readBlog">
             <div class="blogImg">
               <img src="/images/skyscraper.jpg" alt="">
@@ -419,15 +426,12 @@
               <p>read time 5 min</p>
               <p>june 26, 2024</p>
             </div>
-            <h4>The Morphogenesis Approach to Sustainable Architecture</h4>
+            <h4>Innovative Materials Shaping the Future of Architecture</h4>
             <div class="d b">
               <h4>read article<i class="fa-solid fa-arrow-right"></i></h4>
             </div>
           </div>
         </article>
-      </div>
-      </div>
-    </aside>
 
     <footer>
       <div class="fbig">
@@ -518,6 +522,25 @@
           menuShow.classList.toggle("hella")
         }
       })
+
+      let forAdditionalGrid = document.querySelector(".projects")
+
+      let moreItems = document.querySelectorAll(".find")
+
+      let displayMore = document.querySelector(".showmore p")
+
+      displayMore.addEventListener("click",()=>{
+        if(displayMore.textContent == "show more"){
+          forAdditionalGrid.classList.add("moreGrid")
+          moreItems.forEach(element => element.classList.remove("hide"))
+          displayMore.textContent = "show less"
+        }else{
+          moreItems.forEach(element => element.classList.add("hide"))
+          displayMore.textContent = "show more"
+          forAdditionalGrid.classList.remove("moreGrid")
+        }
+      })
+      
       // .fa-close
     </script>
 </body>
